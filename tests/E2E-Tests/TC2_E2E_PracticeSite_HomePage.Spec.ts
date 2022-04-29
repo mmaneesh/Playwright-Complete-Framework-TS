@@ -89,7 +89,7 @@ test.describe('Validating Open cart Demo App', () => {
         await page.locator(homePageLocators.proceedToCheckoutButton).click();
         await expect(page.locator(homePageLocators.shoppingCartTitle)).toBeVisible();
         await expect(page).toHaveURL('http://automationpractice.com/index.php?controller=order');
-        await expect(page).toHaveTitle('Order - My Stores');
+        await expect(page).toHaveTitle('Order - My Store');
 
         await expect(page.locator(homePageLocators.totalCartPrice)).toContainText('$35.02');
 
